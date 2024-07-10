@@ -7,14 +7,13 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 header {
     background: #fff;
-    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,9 +21,11 @@ header {
 }
 
 header .container {
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #293233;
 }
 
 header .logo {
@@ -55,31 +56,61 @@ body {
     padding-top: 60px; /* ヘッダーの高さを考慮 */
 }
 
-.hero {
-    background: #f3fbff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.hero h2 {
-    margin: 0;
-    color: #005a8b;
+.container h2 {
     font-size: 2em;
+    color: #293233;
+    margin-bottom: 0;
 }
 
-.hero p {
-    margin-top: 10px;
-    color: #333;
+.container p {
+    font-size: 1em;
+    color: #293233;
+    margin-top: 2px;
 }
 
 section {
-    padding: 40px 0;
+    padding: 70px 0;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: #005a8b;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.hero {
+    background: #fff;
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.hero h2 {
+    margin: 0;
+    color: #293233;
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #293233;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    vertical-align: middle;
+}
+
+#about {
+    background-color: #dff1ff;
 }
 
 .service {
@@ -120,17 +151,12 @@ h2 {
 }
 
 footer {
-    background: #005a8b;
-    color: #fff;
+    background: #fff;
+    color: #293233;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
-footer .social a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
 
 
 
