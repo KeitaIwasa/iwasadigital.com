@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iwasadigital | 飲食店のデジタルトランスフォーメーション</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">岩佐デジタル</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>飲食店の未来をデジタルでデザインします</h2>
+            <p>デジタルソリューションであなたの飲食店をサポート</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>私について</h2>
+            <p>名前: 岩佐 慶太 (Keita Iwasa)</p>
+            <p>デジタルソリューションの専門家として、飲食店のデジタルトランスフォーメーションをサポートしています。これまでの経験と知識を活かし、効果的なデジタル戦略を提供します。</p>
+            <p>使用ツールと技術: 最新のウェブ技術やデジタルマーケティングツールを駆使して、お客様のビジネスを支援します。</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>私たちのサービス</h2>
+            <div class="service">
+                <h3>ウェブサイト制作</h3>
+                <p>効果的なウェブサイトでお客様にアピール。シンプルで使いやすいデザインを提供します。</p>
+                <p><strong>実績:</strong> レストランAウェブサイト制作</p>
+            </div>
+            <div class="service">
+                <h3>オンライン予約システム</h3>
+                <p>お客様の予約をスムーズに管理。オンラインでの予約受付を簡単に。</p>
+                <p><strong>実績:</strong> カフェBオンライン予約システム導入</p>
+            </div>
+            <div class="service">
+                <h3>デジタルマーケティング</h3>
+                <p>SNSマーケティングやSEO対策で集客を強化。効果的な広告運用で売上アップをサポート。</p>
+                <p><strong>実績:</strong> レストランCデジタルマーケティング支援</p>
+            </div>
+            <div class="service">
+                <h3>POSシステム導入支援</h3>
+                <p>最新のPOSシステムで業務効率を向上。売上データを活用した経営支援。</p>
+                <p><strong>実績:</strong> カフェD POSシステム導入</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="company">会社名</label>
+                <input type="text" id="company" name="company">
+                
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="message">お問い合わせ内容</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <label for="privacy">プライバシーポリシーに同意する</label>
+                <input type="checkbox" id="privacy" name="privacy" required>
+                
+                <button type="submit">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Iwasa Digital</p>
+            <div class="social">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

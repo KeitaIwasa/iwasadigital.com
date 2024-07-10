@@ -1,0 +1,136 @@
+body {
+    font-family: 'Yu Gothic', '游ゴシック体', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #005a8b;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #005a8b;
+    font-weight: bold;
+}
+
+body {
+    padding-top: 60px; /* ヘッダーの高さを考慮 */
+}
+
+.hero {
+    background: #f3fbff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    color: #005a8b;
+    font-size: 2em;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #333;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #005a8b;
+}
+
+.service {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.service h3 {
+    color: #005a8b;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    margin: 10px 0 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #005a8b;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background: #005a8b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
