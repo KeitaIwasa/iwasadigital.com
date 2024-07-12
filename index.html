@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>岩佐デジタル | 飲食店のデジタルトランスフォーメーション</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -30,7 +33,7 @@
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <p class="sub-title">わたしのこと</p>
+            <p class="sub-title">自己紹介</p>
             <p>名前: 岩佐 慶太 Keita Iwasa</p>
             <p>DXコーディネーターとして活動しております。デジタル技術を駆使して、飲食店の業務効率化の事業を行っております。</p>
             <p>経歴: 東京工業大学 工学院 電気電子系 学士2年、コメダ珈琲店でアルバイト2年目</p>
@@ -49,14 +52,15 @@
             <div class="service">
                 <h3>給与明細自動送信システム</h3>
                 <p>従業員の給与明細のPDFを一括でアップロードして、従業員のメールアドレスへ自動送信。</p>
-                <p><strong>実績:</strong> カフェBオンライン予約システム導入</p>
+                <p><strong>実績:</strong> コメダ珈琲店</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>お問い合わせ</h2>
+            <h2>Contact</h2>
+            <p class="sub-title">お問い合わせ</p>
             <form id="contact-form">
                 <label for="name">名前<span style="color: rgb(205, 0, 55);"> *</span></label>
                 <input type="text" id="name" name="name" required>
@@ -72,9 +76,6 @@
                 
                 <label for="message">お問い合わせ内容<span style="color: rgb(205, 0, 55);"> *</span></label>
                 <textarea id="message" name="message" required></textarea>
-                
-                <label for="privacy">プライバシーポリシーに同意する</label>
-                <input type="checkbox" id="privacy" name="privacy" required>
                 
                 <button type="submit">
                     <span id="button-text">送信する</span>

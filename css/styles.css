@@ -1,5 +1,5 @@
 body {
-    font-family: 'Yu Gothic', '游ゴシック体', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -110,27 +110,39 @@ h2 {
 }
 
 #about {
-    background-color: #dff1ff;
+    background-color: #ffffff;
 }
 
 .service {
-    background: #f9f9f9;
+    background: #ffffff;
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
 }
 
 .service h3 {
     color: #005a8b;
 }
 
+#contact {
+    background-color: #e3edf2;
+}
+
 #contact form {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 50px 0 20px;
+    border: 1px solid #293233;
+    border-radius: 10px;
+
 }
 
 #contact form label {
     margin: 10px 0 5px;
+
 }
 
 #contact form input,
@@ -142,16 +154,8 @@ h2 {
 }
 
 #contact form button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #005a8b;
-    color: #fff;
-    cursor: pointer;
-}
-
-#contact form button {
-    padding: 10px;
+    padding: 15px 10px;
+    margin: 30px 0 0;
     border: none;
     border-radius: 5px;
     background: #005a8b;
@@ -161,6 +165,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .2s;
+}
+
+#contact form button:hover {
+    background: #2c7eab;
 }
 
 #contact form button .spinner {
@@ -185,10 +194,83 @@ h2 {
 
 footer {
     background: #fff;
-    color: #293233;
+    color: #464f52;
     text-align: center;
     padding: 10px 0;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+        padding: 5px 10px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 1.5em;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .service {
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 5px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 15px;
+    }
+    .service {
+        padding: 18px;
+        margin: 18px 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .container {
+        width: 85%;
+        padding: 5px 30px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .service {
+        padding: 20px;
+        margin: 20px 0;
+    }
+}
+
 
 
 
