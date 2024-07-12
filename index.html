@@ -56,29 +56,36 @@
 
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="sub-title">お問い合わせ</p>
-            <form action="submit_form.php" method="POST">
-                <label for="name">名前</label>
+            <h2>お問い合わせ</h2>
+            <form id="contact-form">
+                <label for="name">名前<span style="color: rgb(205, 0, 55);"> *</span></label>
                 <input type="text" id="name" name="name" required>
                 
                 <label for="company">会社名</label>
                 <input type="text" id="company" name="company">
                 
-                <label for="email">メールアドレス</label>
+                <label for="email">メールアドレス<span style="color: rgb(205, 0, 55);"> *</span></label>
                 <input type="email" id="email" name="email" required>
                 
                 <label for="phone">電話番号</label>
                 <input type="tel" id="phone" name="phone">
                 
-                <label for="message">お問い合わせ内容</label>
+                <label for="message">お問い合わせ内容<span style="color: rgb(205, 0, 55);"> *</span></label>
                 <textarea id="message" name="message" required></textarea>
                 
                 <label for="privacy">プライバシーポリシーに同意する</label>
                 <input type="checkbox" id="privacy" name="privacy" required>
                 
-                <button type="submit">送信する</button>
+                <button type="submit">
+                    <span id="button-text">送信する</span>
+                    <div id="spinner" class="spinner" style="display:none;"></div>
+                </button>
             </form>
+            <div id="thank-you-message" style="display:none;">
+                <h3>お問い合わせありがとうございます。</h3>
+                <p>お問い合わせ内容を確認次第、ご連絡いたします。通常、1〜2営業日以内にご返信いたしますので、今しばらくお待ちください。</p>
+                <p>よろしくお願いいたします。</p>
+            </div>
         </div>
     </section>
 
@@ -87,5 +94,8 @@
             <p>© 2024 岩佐デジタル</p>
         </div>
     </footer>
+
+    <script src="scripts/scripts.js"></script>
+    
 </body>
 </html>
