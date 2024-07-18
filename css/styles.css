@@ -10,6 +10,7 @@ body {
     width: 70%;
     margin: 0 auto;
     padding: 5px 0;
+    max-width: 1000px;
 }
 
 header {
@@ -74,12 +75,12 @@ section {
 
 h2 {
     text-align: center;
-    margin-bottom: 5px;
     color: #005a8b;
 }
 
 .sub-title {
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .hero {
@@ -256,67 +257,6 @@ footer {
     padding: 10px 0;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    .container {
-        width: 95%;
-        padding: 5px 10px;
-    }
-
-    .hero h2 {
-        font-size: 1.5em;
-    }
-    .hero p {
-        font-size: 14px;
-    }
-    .service {
-        padding: 15px;
-        margin: 15px 0;
-    }
-
-    header {
-        background: none;
-    }
-
-    header .container {
-        padding: 10px 30px;
-        border-bottom: none;
-    }
-
-    nav {
-        display: none;
-    }
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 5px 20px;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    .hero h2 {
-        font-size: 1.8em;
-    }
-    .hero p {
-        font-size: 15px;
-    }
-    .service {
-        padding: 18px;
-        margin: 18px 0;
-    }
-
-    .break-sm {
-        display: inline;
-    }
-}
-
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
     .container {
@@ -341,7 +281,72 @@ footer {
     }
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .container, header .container {
+        width: 93%;
+        padding: 5px 20px;
+        box-sizing: border-box;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 15px;
+    }
+    .service {
+        padding: 18px;
+        margin: 18px 0;
+    }
 
+    .break-sm {
+        display: inline;
+    }
+
+    header {
+        background: none;
+    }
+
+    header .container {
+        padding: 10px 30px;
+        border-bottom: none;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .container, header .container {
+        width: 97%;
+        padding: 7px 10px;
+        box-sizing: border-box;
+    }
+
+    .hero h2 {
+        font-size: 1.7em;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .service {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+
+}
 
 
 
