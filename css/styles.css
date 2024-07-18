@@ -114,9 +114,57 @@ h2 {
     display: none;
 }
 
-#about {
-    background-color: #ffffff;
-}
+/* 自己紹介セクションのスタイル */
+.profile {
+    text-align: center;
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .profile h3 {
+    margin: 0;
+    color: #293233;
+    letter-spacing: 6px;
+    font-size: 1.2em;
+    margin: 0.1em 0 1.5em 0;
+  }
+  
+  .english-name {
+    font-size: 0.8em;
+    color: #777;
+    letter-spacing: 2px;
+  }
+  
+  .bio {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  .details {
+    font-size: 1em;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 450px;
+  }
+  
+  .details p {
+    margin: 10px 0;
+  }
+
 
 .service {
     background: #ffffff;
