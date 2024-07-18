@@ -45,12 +45,44 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #005a8b;
     font-weight: bold;
+    display: block;
+    position: relative;
+}
+
+nav ul li a:before {
+	content: '';
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid #005a8b;
+	position: absolute;
+	display: block;
+}
+nav ul li a:hover:before {
+	width: 50%;
+	border-bottom: 2px solid #005a8b;
+}
+nav ul li a:after {
+	content: '';
+	width: 0;
+	right: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid #005a8b;
+	position: absolute;
+	display: block;
+}
+nav ul li a:hover:after {
+	width: 50%;
+	border-bottom: 2px solid #005a8b;
 }
 
 body {
@@ -67,6 +99,7 @@ body {
     font-size: 1em;
     color: #293233;
     margin-top: 2px;
+    line-height: 1.8;
 }
 
 section {
@@ -98,8 +131,13 @@ h2 {
     margin-bottom: 60px;
 }
 
+.cho {
+    color:#005a8b;
+    font-size: 1.3em;
+}
+
 .hero p {
-    font-size: 15px;
+    font-size: 1em;
     margin-top: 10px;
     color: #293233;
 }
@@ -120,51 +158,51 @@ h2 {
     text-align: center;
   }
   
-  .profile-header {
+.profile-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
   }
   
-  .profile-image {
+.profile-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-  }
+}
   
-  .profile h3 {
+.profile h3 {
     margin: 0;
     color: #293233;
     letter-spacing: 6px;
     font-size: 1.2em;
     margin: 0.1em 0 1.5em 0;
-  }
+}
   
-  .english-name {
+.english-name {
     font-size: 0.8em;
     color: #777;
     letter-spacing: 2px;
-  }
+}
   
-  .bio {
+.bio {
     text-align: left;
     margin-bottom: 20px;
     line-height: 1.8;
-  }
+}
   
-  .details {
+.details {
     font-size: 1em;
     text-align: left;
     margin: 0 auto;
     max-width: 450px;
-  }
+}
   
-  .details p {
+.details p {
     margin: 10px 0;
-  }
+}
 
 
 .service {
@@ -272,9 +310,6 @@ footer {
     .hero h2 {
         font-size: 2em;
     }
-    .hero p {
-        font-size: 16px;
-    }
     .service {
         padding: 20px;
         margin: 20px 0;
@@ -297,9 +332,7 @@ footer {
     .hero h2 {
         font-size: 1.8em;
     }
-    .hero p {
-        font-size: 15px;
-    }
+
     .service {
         padding: 18px;
         margin: 18px 0;
@@ -333,9 +366,6 @@ footer {
 
     .hero h2 {
         font-size: 1.7em;
-    }
-    .hero p {
-        font-size: 14px;
     }
     .service {
         padding: 15px;
