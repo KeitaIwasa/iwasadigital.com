@@ -178,26 +178,28 @@ h2 {
     color: #293233;
     letter-spacing: 6px;
     font-size: 1.2em;
-    margin: 0.1em 0 1.5em 0;
+    margin-bottom: 1.5em;
 }
   
 .english-name {
     font-size: 0.8em;
     color: #777;
     letter-spacing: 2px;
+    font-weight: 400;
 }
   
 .bio {
     text-align: left;
-    margin-bottom: 20px;
     line-height: 1.8;
+    margin: 0 auto 1.5em;
+    max-width: 500px;
 }
   
 .details {
     font-size: 1em;
     text-align: left;
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 500px;
 }
   
 .details p {
